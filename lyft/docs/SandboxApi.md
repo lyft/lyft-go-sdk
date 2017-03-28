@@ -13,8 +13,6 @@ Method | HTTP request | Description
 # **SetPrimeTime**
 > SetPrimeTime(request)  (empty response body)
 
-Preset Prime Time percentage
-
 Preset a Prime Time percentage in the region surrounding the specified location. This Prime Time percentage will be applied when requesting cost, or when requesting a ride in sandbox mode. 
 
 ### Required Parameters
@@ -23,12 +21,8 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **request** | [**SandboxPrimetime**](SandboxPrimetime.md)| Prime Time to be preset in the region surrounding the lat, lng | 
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 # **SetRideStatus**
 > SetRideStatus(id, request) [**SandboxRideUpdate**](SandboxRideUpdate.md)
-
-Propagate ride through ride status
 
 Propagate a sandbox-ride through various ride status 
 
@@ -39,12 +33,8 @@ Name | Type | Description  | Notes
 **id** | **string**| The ID of the ride | 
 **request** | [**SandboxRideStatus**](SandboxRideStatus.md)| status to propagate the ride into | 
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 # **SetRideTypeAvailability**
 > SetRideTypeAvailability(rideType, request)  (empty response body)
-
-Driver availability for processing ride request
 
 Set driver availability for the provided ride_type in the city/region surrounding the specified location 
 
@@ -55,12 +45,8 @@ Name | Type | Description  | Notes
 **rideType** | **string**|  | 
 **request** | [**SandboxDriverAvailability**](SandboxDriverAvailability.md)| Driver availability to be preset in the region surrounding the lat, lng | 
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 # **SetRideTypes**
 > SetRideTypes(request) [**SandboxRideType**](SandboxRideType.md)
-
-Preset types of rides for sandbox
 
 The sandbox-ridetypes endpoint allows you to preset the ridetypes in the region surrounding the specified latitude and longitude to allow testing different scenarios 
 
@@ -69,6 +55,4 @@ The sandbox-ridetypes endpoint allows you to preset the ridetypes in the region 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **request** | [**SandboxRideType**](SandboxRideType.md)| Ridetypes to be preset in the region surrounding the lat, lng | 
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 

@@ -17,8 +17,6 @@ Method | HTTP request | Description
 # **CancelRide**
 > CancelRide(id, optional)  (empty response body)
 
-Cancel a ongoing requested ride
-
 Cancel a ongoing ride which was requested earlier by providing the ride id. 
 
 ### Required Parameters
@@ -35,24 +33,16 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **request** | [**CancellationRequest**](CancellationRequest.md)|  | 
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 # **GetProfile**
 > GetProfile() [**Profile**](Profile.md)
-
-The user's general info
 
 The v1 of this endpoint returns the user's ID, v2 will return more general info about the user. We require authentication for this endpoint, so we extract the user ID from the access token. 
 
 ### Required Parameters
 This endpoint does not need any parameter.
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 # **GetRide**
 > GetRide(id) [**RideDetail**](RideDetail.md)
-
-Get the ride detail of a given ride ID
 
 Get the status of a ride along with information about the driver, vehicle and price of a given ride ID 
 
@@ -62,12 +52,8 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **id** | **string**| The ID of the ride | 
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 # **GetRideReceipt**
 > GetRideReceipt(id) [**RideReceipt**](RideReceipt.md)
-
-Get the receipt of the rides.
 
 Get the receipt information of a processed ride by providing the ride id. Receipts will only be available to view once the payment has been processed. In the case of canceled ride, cancellation penalty is included if applicable. 
 
@@ -77,12 +63,8 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **id** | **string**| The ID of the ride | 
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 # **GetRides**
 > GetRides(startTime, optional) [**RidesResponse**](RidesResponse.md)
-
-List rides
 
 Get a list of past & current rides for this passenger. 
 
@@ -101,12 +83,8 @@ Name | Type | Description  | Notes
  **endTime** | **time.Time**| Restrict to rides starting before this point in time. The earliest supported date is 2015-01-01T00:00:00+00:00  | 
  **limit** | **int32**| The maximum number of rides to return. The default limit is 10 if not specified. The maximum allowed value is 50, an integer greater that 50 will return at most 50 results.  | [default to 10]
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 # **NewRide**
 > NewRide(request) [**RideRequest**](RideRequest.md)
-
-Request a Lyft
 
 Request a Lyft come pick you up at the given location. 
 
@@ -116,12 +94,8 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **request** | [**Ride**](Ride.md)| Ride request information | 
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 # **SetRideDestination**
 > SetRideDestination(id, request) [**Location**](Location.md)
-
-Update the destination of the ride
 
 Add or update the ride's destination. Note that the ride must still be active (not droppedOff or canceled), and that destinations on Lyft Line rides can not be changed. 
 
@@ -132,12 +106,8 @@ Name | Type | Description  | Notes
 **id** | **string**| The ID of the ride | 
 **request** | [**Location**](Location.md)| The coordinates and optional address of the destination | 
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 # **SetRideRating**
 > SetRideRating(id, request)  (empty response body)
-
-Add the passenger's rating, feedback, and tip
 
 Add the passenger's 1 to 5 star rating of the ride, optional written feedback, and optional tip amount in minor units and currency. The ride must already be dropped off, and ratings must be given within 24 hours of drop off. For purposes of display, 5 is considered the default rating. When this endpoint is successfully called, payment processing will begin. 
 
@@ -147,6 +117,4 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **id** | **string**| The ID of the ride | 
 **request** | [**RatingRequest**](RatingRequest.md)| The rating and optional feedback | 
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
