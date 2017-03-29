@@ -34,7 +34,7 @@ type CostEstimate struct {
 	EstimatedDurationSeconds int32 `json:"estimated_duration_seconds,omitempty"`
 
 	// The validity of the cost estimate returned
-	IsValidEstimate bool `json:"is_valid_estimate,omitempty"`
+	IsValidEstimate bool `json:"is_valid_estimate"`
 
 	// Current Prime Time Percentage. Prime Time adds a percentage to ride costs, prior to other applicable fees. When ride requests greatly outnumber available drivers, our system will automatically turn on Prime Time. If Prime Time is inactive, the value returned will be '0%'. Note: The returned estimate already has Prime Time factored in. The value is returned here for reference and to allow users to confirm/accept Prime Time prior to initiating a ride. 
 	PrimetimePercentage string `json:"primetime_percentage,omitempty"`

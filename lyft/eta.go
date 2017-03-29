@@ -25,5 +25,5 @@ type Eta struct {
 	EtaSecondsMax int32 `json:"eta_seconds_max,omitempty"`
 
 	// The validity of the ETA estimate returned
-	IsValidEstimate bool `json:"is_valid_estimate,omitempty"`
+	IsValidEstimate bool `json:"is_valid_estimate"`
 }

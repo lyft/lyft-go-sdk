@@ -19,5 +19,5 @@ type SandboxDriverAvailability struct {
 	Lng float64 `json:"lng,omitempty"`
 
 	// The availability of driver in a region
-	DriverAvailability bool `json:"driver_availability,omitempty"`
+	DriverAvailability bool `json:"driver_availability"`
 }
