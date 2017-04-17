@@ -15,12 +15,9 @@ import (
 	"net/http"
 	"strings"
 	"errors"
-	"golang.org/x/net/context"
 	"encoding/json"
 	"fmt"
 )
-
-var _ context.Context
 
 type SandboxApiService service
 

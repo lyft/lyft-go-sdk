@@ -15,13 +15,10 @@ import (
 	"net/http"
 	"strings"
 	"errors"
-	"golang.org/x/net/context"
 	"time"
 	"encoding/json"
 	"fmt"
 )
-
-var _ context.Context
 
 type UserApiService service
 
