@@ -27,10 +27,10 @@ type RideRequestError struct {
 	// Current Prime Time multiplier (eg. if primetime_percentage is 100%, primetime_multiplier will be 2.0)
 	PrimetimeMultiplier float32 `json:"primetime_multiplier,omitempty"`
 
-	// A token that confirms the user has accepted current Prime Time charges
+	// A token that confirms the user has accepted current Prime Time charges (Deprecated)
 	PrimetimeConfirmationToken string `json:"primetime_confirmation_token,omitempty"`
 
-	// Reserved for future use
+	// A token that confirms the user has accepted current Prime Time and/or fixed price charges
 	CostToken string `json:"cost_token,omitempty"`
 
 	// Validity of the token in seconds

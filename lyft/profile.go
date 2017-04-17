@@ -15,4 +15,10 @@ type Profile struct {
 
 	// The unique ID of this user
 	Id string `json:"id,omitempty"`
+
+	// The first name of this user
+	FirstName string `json:"first_name,omitempty"`
+
+	// The last name of this user
+	LastName string `json:"last_name,omitempty"`
 }

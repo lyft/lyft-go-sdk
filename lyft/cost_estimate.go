@@ -39,6 +39,9 @@ type CostEstimate struct {
 	// Current Prime Time Percentage. Prime Time adds a percentage to ride costs, prior to other applicable fees. When ride requests greatly outnumber available drivers, our system will automatically turn on Prime Time. If Prime Time is inactive, the value returned will be '0%'. Note: The returned estimate already has Prime Time factored in. The value is returned here for reference and to allow users to confirm/accept Prime Time prior to initiating a ride. 
 	PrimetimePercentage string `json:"primetime_percentage,omitempty"`
 
-	// This token is needed when requesting rides. See 'Request a Lyft' for more details
+	// This token is needed when requesting rides. (Deprecated)
 	PrimetimeConfirmationToken string `json:"primetime_confirmation_token,omitempty"`
+
+	// A token that confirms the user has accepted current Prime Time and/or fixed price charges. See 'Request a Lyft' for more details
+	CostToken string `json:"cost_token,omitempty"`
 }
