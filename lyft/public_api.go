@@ -15,11 +15,8 @@ import (
 	"net/http"
 	"strings"
 	"errors"
-	"golang.org/x/net/context"
 	"encoding/json"
 )
-
-var _ context.Context
 
 type PublicApiService service
 
