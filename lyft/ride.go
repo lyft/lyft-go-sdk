@@ -21,6 +21,9 @@ type Ride struct {
 	// The *requested* location for passenger drop off
 	Destination interface{} `json:"destination,omitempty"`
 
-	// A token that confirms the user has accepted current primetime charges
+	// A token that confirms the user has accepted current primetime charges (Deprecated)
 	PrimetimeConfirmationToken string `json:"primetime_confirmation_token,omitempty"`
+
+	// A token that confirms the user has accepted current Prime Time and/or fixed price charges
+	CostToken string `json:"cost_token,omitempty"`
 }

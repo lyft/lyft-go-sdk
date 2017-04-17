@@ -12,7 +12,8 @@ Name | Type | Description | Notes
 **EstimatedDurationSeconds** | **int32** | Estimated time to get from the start location to the end.  | [optional] [default to null]
 **IsValidEstimate** | **bool** | The validity of the cost estimate returned | [optional] [default to null]
 **PrimetimePercentage** | **string** | Current Prime Time Percentage. Prime Time adds a percentage to ride costs, prior to other applicable fees. When ride requests greatly outnumber available drivers, our system will automatically turn on Prime Time. If Prime Time is inactive, the value returned will be &#39;0%&#39;. Note: The returned estimate already has Prime Time factored in. The value is returned here for reference and to allow users to confirm/accept Prime Time prior to initiating a ride.  | [optional] [default to null]
-**PrimetimeConfirmationToken** | **string** | This token is needed when requesting rides. See &#39;Request a Lyft&#39; for more details | [optional] [default to null]
+**PrimetimeConfirmationToken** | **string** | This token is needed when requesting rides. (Deprecated) | [optional] [default to null]
+**CostToken** | **string** | A token that confirms the user has accepted current Prime Time and/or fixed price charges. See &#39;Request a Lyft&#39; for more details | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
