@@ -74,6 +74,9 @@ type RideDetail struct {
 	// The written feedback the user left for this ride
 	Feedback string `json:"feedback,omitempty"`
 
+	// The web view showing the pricing structure for the geographic area where the ride was taken          
+	PricingDetailsUrl string `json:"pricing_details_url,omitempty"`
+
 	// The web view showing the passenger, driver, and route for this ride. This field will only be present for rides created through this API, or that have been shared through the \"Share my Route\" feature 
 	RouteUrl string `json:"route_url,omitempty"`
 
@@ -85,4 +88,7 @@ type RideDetail struct {
 
 	// Indicates whether the ride was requested from the business profile or personal profile of the user. 
 	RideProfile interface{} `json:"ride_profile,omitempty"`
+
+	// Hex color code of the driver AMP device.
+	BeaconColor string `json:"beacon_color,omitempty"`
 }
