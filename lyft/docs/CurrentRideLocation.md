@@ -1,0 +1,12 @@
+# CurrentRideLocation
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**Lat** | **float64** | The latitude component of a location | [default to null]
+**Lng** | **float64** | The longitude component of a location | [default to null]
+**Bearing** | **float64** | Bearing of the driver&#39;s car in degrees | [optional] [default to null]
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+

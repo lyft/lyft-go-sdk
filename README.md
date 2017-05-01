@@ -67,6 +67,7 @@ Class | Method | HTTP request | Description
  - [Cost](https://github.com/lyft/lyft-go-sdk/tree/master/lyft/docs/Cost.md)
  - [CostEstimate](https://github.com/lyft/lyft-go-sdk/tree/master/lyft/docs/CostEstimate.md)
  - [CostEstimateResponse](https://github.com/lyft/lyft-go-sdk/tree/master/lyft/docs/CostEstimateResponse.md)
+ - [CurrentRideLocation](https://github.com/lyft/lyft-go-sdk/tree/master/lyft/docs/CurrentRideLocation.md)
  - [DriverDetail](https://github.com/lyft/lyft-go-sdk/tree/master/lyft/docs/DriverDetail.md)
  - [ErrorDetail](https://github.com/lyft/lyft-go-sdk/tree/master/lyft/docs/ErrorDetail.md)
  - [Eta](https://github.com/lyft/lyft-go-sdk/tree/master/lyft/docs/Eta.md)
