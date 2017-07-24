@@ -14,9 +14,12 @@ package lyft
 type RideTypeEnumWithOther string
 
 const (
-	RideTypeWithOtherLyft     RideTypeEnumWithOther = "lyft"
-	RideTypeWithOtherLyftLine RideTypeEnumWithOther = "lyft_line"
-	RideTypeWithOtherLyftPlus RideTypeEnumWithOther = "lyft_plus"
-	RideTypeWithOtherLyftSUV  RideTypeEnumWithOther = "lyft_suv"
-	RideTypeWithOther         RideTypeEnumWithOther = "other"
+	RideTypeWithOtherLyft        RideTypeEnumWithOther = "lyft"
+	RideTypeWithOtherLyftLine    RideTypeEnumWithOther = "lyft_line"
+	RideTypeWithOtherLyftPlus    RideTypeEnumWithOther = "lyft_plus"
+	RideTypeWithOtherLyftSUV     RideTypeEnumWithOther = "lyft_suv"
+	RideTypeWithOtherLyftPremier RideTypeEnumWithOther = "lyft_premier"
+	RideTypeWithOtherLyftLux     RideTypeEnumWithOther = "lyft_lux"
+	RideTypeWithOtherLyftLuxSUV  RideTypeEnumWithOther = "lyft_luxsuv"
+	RideTypeWithOther            RideTypeEnumWithOther = "other"
 )
