@@ -4,7 +4,8 @@ lyft-go-sdk is a Go client library for accessing the [Lyft API](https://develope
 
 ## Registration
 - You must first create a Lyft Developer account [here](https://www.lyft.com/developers).
-- Once registered, you will be assigned a Client ID and a Client Secret.
+- Once registered, create a [new application here](https://https://www.lyft.com/developers/manage).
+- Your new application will be assigned a Client ID and Client Secret (for use with two- or three-legged OAuth) and a Client Token (for use with public endpoints that don't require user context).
 
 ## Installation
 
@@ -109,7 +110,7 @@ Class | Method | HTTP request | Description
 
 ## Support
 
-If you're looking for help configuring or using the SDK, or if you have general questions related to our APIs, the Lyft Developer Platform team provides support through our [forum](https://developer.lyft.com/discuss) as well as on Stack Overflow (using the `lyft-api` tag).
+If you're looking for help configuring or using the SDK, or if you have general questions related to our APIs, the Lyft Developer Platform team provides support through our [forum](https://devcommunity.lyft.co/) as well as on Stack Overflow (using the `lyft-api` tag).
 
 ## Reporting security vulnerabilities
 

@@ -21,4 +21,7 @@ type Profile struct {
 
 	// The last name of this user
 	LastName string `json:"last_name,omitempty"`
+
+	// Indicates whether this user has taken at least one Lyft ride
+	HasTakenARide bool `json:"has_taken_a_ride"`
 }
