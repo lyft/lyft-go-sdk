@@ -1,3 +1,7 @@
+# DEPRECATION NOTE
+
+Please note that this SDK is deprecated and is no longer officially supported by Lyft.
+
 # Lyft Go SDK
 
 lyft-go-sdk is a Go client library for accessing the [Lyft API](https://developer.lyft.com/docs).
